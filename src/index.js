@@ -6,6 +6,6 @@ const userRoute = require('./routes/userRoute')
 
 server.use(express.urlencoded({ extended: true }))
 server.use(express.json())
-server.use('/user', userRoute)
+server.use('/', userRoute)
 
 server.listen(port)
